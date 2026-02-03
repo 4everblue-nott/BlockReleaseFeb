@@ -13,10 +13,13 @@ admission_pd = pd.read_csv("Students_admission_records.csv")
 
 print(admission_pd.head())
 
-count_missing = admission_pd.isnull().sum()
-count_missing_as_percentage = (count_missing / len(admission_pd)) * 100
-print("Missing values in each column:\n", count_missing)
-print("\nMissing values as percentage of total rows:\n", count_missing_as_percentage)
-    
+#count_missing = admission_pd.isnull().sum()
+#count_missing_as_percentage = (count_missing / len(admission_pd)) * 100
+#print("Missing values in each column:\n", count_missing)
+#print("\nMissing values as percentage of total rows:\n", count_missing_as_percentage)
+
+def_check_for_duplicates = admission_pd.duplicated().sum()
+print(f"Number of duplicate rows: {def_check_for_duplicates}")
+
 
 
