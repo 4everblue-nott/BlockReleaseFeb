@@ -9,7 +9,7 @@ def read_csv(file_path):
             data.append(row)
     return data
 
-admission_pd = pd.read_csv("C:\\Users\\AT332757\\Documents\\Uni\\Week 20\\Group_ex\\Students_admission_records.csv")
+admission_pd = pd.read_csv("Students_admission_records.csv")
 
 print(admission_pd.head())
 
